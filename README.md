@@ -1,13 +1,8 @@
----
-layout: default
-title: My Portfolio
----
-
 <div style="text-align: center; margin: 15px 0 25px 0;">
-  <span style="font-size: 24px; color: #6B705C;">🌿 🪶 🌿</span>
+  <span style="font-size: 26px; color: #4A5D4E;">🌿 🕊️ 🪶 🕊️ 🌿</span>
 </div>
 
-# Welcome
+# Portfolio
 
 Personal development portfolio featuring data science projects, technical skills, and risk analytics modeling.
 
@@ -26,7 +21,7 @@ Personal development portfolio featuring data science projects, technical skills
 
 ## 📖 Featured Projects
 
-### 💳 [Banking Transaction Risk Analytics](https://github.com/cj-mori/DSPP-project/blob/main/banking-transaction-risk-analytics-dataset.ipynb)
+### 💳 Banking Transaction Risk Analytics
 An in-depth data analytics project focused on identifying transaction risks, patterns, and anomaly detection in financial datasets.
 
-* **View Notebook:** [Open Jupyter Notebook ↗](https://github.com/cj-mori/DSPP-project/blob/main/banking-transaction-risk-analytics-dataset.ipynb)
+* **Project Code:** [Link to DSPP Project](https://github.com/cj-mori/Portfolio/blob/main/banking-transaction-risk-analytics-dataset.ipynb)
