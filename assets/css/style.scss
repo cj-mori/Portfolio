@@ -1,70 +1,61 @@
 ---
 ---
 
-/* Import Vintage Serif & Classic Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Cinzel:wght@700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+/* Import Classic Vintage Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Cinzel:wght@600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
 
 /* Botanical Vintage Palette */
 :root {
-  --bg-linen: #F7F4EE;
-  --text-dark: #2B2A27;
-  --olive-green: #6B705C;
-  --rust-red: #A54632;
-  --terracotta: #D48C70;
+  --bg-cream: #F8F5EE;
+  --header-paper: #EFFAF5;
+  --text-dark: #2C3531;
+  --olive-green: #4A5D4E;
+  --rust-red: #A34839;
   --gold-accent: #D4A373;
-  --card-bg: #FFFFFF;
-  --border-muted: #E2DCD5;
+  --border-subtle: #D8D2C2;
 }
 
-/* Page Background & Base Styles */
+/* Base Page Styling */
 body {
-  background-color: var(--bg-linen) !important;
+  background-color: var(--bg-cream) !important;
   color: var(--text-dark) !important;
   font-family: 'EB Garamond', Georgia, serif !important;
   font-size: 1.15rem;
   line-height: 1.7;
 }
 
-/* Header Banner - Vintage Botanical Paper Style */
+/* Header Banner Styling */
 header, .site-header {
-  background-color: #F2ECE1 !important;
-  border-bottom: 3px double var(--olive-green);
-  padding: 45px 20px !important;
+  background-color: #F0EAE1 !important;
+  border-bottom: 2px solid var(--olive-green);
+  padding: 40px 20px !important;
   text-align: center;
-  position: relative;
-  /* Subtle Vintage Decorative Corner Ornaments */
-  background-image: 
-    radial-gradient(circle at 10% 20%, rgba(107, 112, 92, 0.08) 0%, transparent 20%),
-    radial-gradient(circle at 90% 80%, rgba(165, 70, 50, 0.08) 0%, transparent 20%);
 }
 
-/* Header Title - 3D Vintage Label Style */
+/* Header Title */
 header h1, .site-title {
   font-family: 'Cinzel', serif !important;
-  font-size: 3rem !important;
+  font-size: 2.8rem !important;
   font-weight: 700 !important;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   color: var(--rust-red) !important;
   text-transform: uppercase;
-  /* Layered retro 3D text shadow */
-  text-shadow: 
-    2px 2px 0px #F7F4EE,
-    4px 4px 0px var(--text-dark);
-  margin-bottom: 15px !important;
+  text-shadow: 1px 1px 0px #FFF, 3px 3px 0px var(--text-dark);
+  margin-bottom: 12px !important;
 }
 
-/* Subtitle Tagline - High Contrast & Clean Serif */
+/* High-Contrast Description Subtitle */
 header p, header #project_tagline, .site-header p {
   color: var(--olive-green) !important;
   font-family: 'Playfair Display', serif !important;
   font-style: italic;
-  font-size: 1.35rem !important;
+  font-size: 1.3rem !important;
   font-weight: 600 !important;
   max-width: 650px;
   margin: 0 auto !important;
 }
 
-/* Headings */
+/* Section Headings */
 h1, h2, h3 {
   font-family: 'Playfair Display', serif !important;
   color: var(--text-dark) !important;
@@ -74,8 +65,8 @@ h2 {
   font-size: 1.8rem;
   color: var(--rust-red) !important;
   border-bottom: 1px solid var(--gold-accent);
-  padding-bottom: 8px;
-  margin-top: 30px;
+  padding-bottom: 6px;
+  margin-top: 28px;
 }
 
 /* Links & Buttons */
@@ -83,7 +74,6 @@ a {
   color: var(--rust-red);
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.2s ease;
 }
 
 a:hover {
