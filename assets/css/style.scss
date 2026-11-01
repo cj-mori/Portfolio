@@ -1,82 +1,108 @@
 ---
 ---
 
-/* Import 70s Retro Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=DM+Sans:wght@400;700&display=swap');
+/* Import Vintage Serif & Classic Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Cinzel:wght@700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
 
-/* Warm 70s Vintage Color Palette */
+/* Botanical Vintage Palette */
 :root {
-  --bg-cream: #FDF6E3;
-  --retro-navy: #1E2D4A;
-  --retro-red: #E75A4B;
-  --retro-orange: #EE8A38;
-  --retro-yellow: #F4C447;
-  --retro-teal: #78B7A4;
+  --bg-linen: #F7F4EE;
+  --text-dark: #2B2A27;
+  --olive-green: #6B705C;
+  --rust-red: #A54632;
+  --terracotta: #D48C70;
+  --gold-accent: #D4A373;
+  --card-bg: #FFFFFF;
+  --border-muted: #E2DCD5;
 }
 
-/* Page Background & Typography */
+/* Page Background & Base Styles */
 body {
-  background-color: var(--bg-cream) !important;
-  color: var(--retro-navy) !important;
-  font-family: 'DM Sans', sans-serif !important;
-  line-height: 1.6;
+  background-color: var(--bg-linen) !important;
+  color: var(--text-dark) !important;
+  font-family: 'EB Garamond', Georgia, serif !important;
+  font-size: 1.15rem;
+  line-height: 1.7;
 }
 
-/* Retro Groovy Headings */
-h1, h2, h3, .site-title {
-  font-family: 'Shrikhand', cursive !important;
-  color: var(--retro-navy) !important;
-  letter-spacing: 1px;
+/* Header Banner - Vintage Botanical Paper Style */
+header, .site-header {
+  background-color: #F2ECE1 !important;
+  border-bottom: 3px double var(--olive-green);
+  padding: 45px 20px !important;
+  text-align: center;
+  position: relative;
+  /* Subtle Vintage Decorative Corner Ornaments */
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(107, 112, 92, 0.08) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(165, 70, 50, 0.08) 0%, transparent 20%);
 }
 
-h1 {
-  font-size: 2.5rem;
-  text-shadow: 3px 3px 0px var(--retro-yellow), 6px 6px 0px var(--retro-orange);
-  margin-bottom: 20px;
+/* Header Title - 3D Vintage Label Style */
+header h1, .site-title {
+  font-family: 'Cinzel', serif !important;
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 4px;
+  color: var(--rust-red) !important;
+  text-transform: uppercase;
+  /* Layered retro 3D text shadow */
+  text-shadow: 
+    2px 2px 0px #F7F4EE,
+    4px 4px 0px var(--text-dark);
+  margin-bottom: 15px !important;
+}
+
+/* Subtitle Tagline - High Contrast & Clean Serif */
+header p, header #project_tagline, .site-header p {
+  color: var(--olive-green) !important;
+  font-family: 'Playfair Display', serif !important;
+  font-style: italic;
+  font-size: 1.35rem !important;
+  font-weight: 600 !important;
+  max-width: 650px;
+  margin: 0 auto !important;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif !important;
+  color: var(--text-dark) !important;
 }
 
 h2 {
   font-size: 1.8rem;
-  border-bottom: 4px solid var(--retro-teal);
-  padding-bottom: 5px;
+  color: var(--rust-red) !important;
+  border-bottom: 1px solid var(--gold-accent);
+  padding-bottom: 8px;
+  margin-top: 30px;
 }
 
-/* 70s Retro Rainbow Top Banner */
-header, .site-header {
-  background: linear-gradient(
-    135deg, 
-    var(--retro-navy) 20%, 
-    var(--retro-red) 20% 40%, 
-    var(--retro-orange) 40% 60%, 
-    var(--retro-yellow) 60% 80%, 
-    var(--retro-teal) 80%
-  ) !important;
-  padding: 25px !important;
-  border-radius: 0 0 16px 16px;
-  color: var(--bg-cream) !important;
-}
-
-header h1, header a {
-  color: var(--bg-cream) !important;
-  text-shadow: 3px 3px 0px var(--retro-navy) !important;
-}
-
-/* Custom retro buttons for your project links */
+/* Links & Buttons */
 a {
-  color: var(--retro-red);
-  font-weight: bold;
+  color: var(--rust-red);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-  color: var(--retro-orange);
+  color: var(--olive-green);
+  text-decoration: underline;
 }
 
-/* Download / Project Button Style */
+/* Download / Action Buttons */
 .downloads a, button, .btn {
-  background-color: var(--retro-navy) !important;
-  color: var(--bg-cream) !important;
-  border: 3px solid var(--retro-yellow) !important;
-  font-family: 'Shrikhand', cursive !important;
-  border-radius: 25px !important;
-  box-shadow: 4px 4px 0px var(--retro-orange) !important;
+  background-color: var(--olive-green) !important;
+  color: #FFFFFF !important;
+  font-family: 'Cinzel', serif !important;
+  border: 1px solid var(--text-dark) !important;
+  border-radius: 4px !important;
+  padding: 8px 18px !important;
+  letter-spacing: 1px;
+  box-shadow: 3px 3px 0px var(--text-dark) !important;
+}
+
+.downloads a:hover, button:hover, .btn:hover {
+  background-color: var(--rust-red) !important;
 }
